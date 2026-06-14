@@ -318,10 +318,67 @@
     @media (max-width: 991px) {
       .hub-navbar .nav-cta { margin: 8px 0; }
     }
+
+    /* Tablet & below — slim cards, tighter sections */
     @media (max-width: 767px) {
       .hub-contact { padding: 40px 16px; }
       .hub-contact .contact-form-card { padding: 22px; margin-top: 30px; }
       .hub-about .stats { gap: 22px 30px; }
+
+      .projects-grid { padding: 34px 0 44px; }
+      .projects-grid .row { --bs-gutter-x: 1rem; --bs-gutter-y: 1rem; }
+      .project-card-img { aspect-ratio: 16 / 9; }
+      .project-card-body { padding: 18px 18px 18px; }
+      .project-card-body h2 { font-size: 23px; margin: 0 0 4px; }
+      .project-card-body .location { margin: 0 0 14px; font-size: 13px; }
+      .project-card-specs { padding: 14px 0; margin: 0 0 16px; }
+      .project-card-specs .spec-value { font-size: 14px; line-height: 1.25; }
+      .project-card-specs .price-block .spec-value { font-size: 20px; }
+      .project-card-specs .spec-value span { font-size: 12px !important; }
+      .project-card-cta { padding: 12px 14px; }
+    }
+
+    /* Phones — hero compactness, stats grid, navbar shrink, smaller serif H2 on cards */
+    @media (max-width: 575px) {
+      .hub-navbar { padding: 8px 16px; }
+      .hub-navbar .navbar-brand img { height: 38px; }
+      .hub-navbar .navbar-nav { gap: 6px; padding-top: 6px; }
+
+      .hub-hero { margin-top: 62px !important; min-height: clamp(480px, 70vh, 600px); }
+      .hub-hero .carousel-item { min-height: clamp(480px, 70vh, 600px); }
+      .hub-hero-overlay { padding: 40px 22px 96px; }
+      .hub-hero-overlay .eyebrow { margin: 0 0 16px; letter-spacing: 2.5px; }
+      .hub-hero-overlay h1 { font-size: 36px; margin: 0 0 18px; }
+      .hub-hero-overlay .sub { font-size: 14px; margin: 0 0 28px; }
+      .hub-hero-overlay .hero-ctas { gap: 10px; width: 100%; }
+      .hub-hero-overlay .hero-cta {
+        flex: 1 1 100%; justify-content: center;
+        padding: 12px 18px; letter-spacing: 1.4px;
+      }
+      .hub-hero .hero-meta { display: none; }
+      .hub-hero .carousel-indicators { left: 22px; right: 22px; bottom: 22px; justify-content: center; }
+      .hub-hero .carousel-indicators button { width: 30px; }
+      .hub-hero .carousel-indicators button.active { width: 46px; }
+
+      .hub-about { padding: 28px 18px; }
+      .hub-about h2 { font-size: 26px; }
+      .hub-about p { font-size: 14px; }
+      .hub-about .stats {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 18px 14px;
+        margin-top: 18px;
+      }
+      .hub-about .stats div { text-align: center; }
+      .hub-about .stats div b { font-size: 22px; }
+
+      .hub-contact { padding: 32px 16px; }
+      .hub-contact .contact-left h2 { font-size: 28px; margin: 0 0 12px; }
+      .hub-contact .contact-left .lead { font-size: 14px; margin: 0 0 18px; }
+      .hub-contact .contact-form-card { padding: 20px; margin-top: 26px; }
+      .hub-contact .contact-form-card h3 { font-size: 18px; }
+      .hub-contact .btn-submit { padding: 15px; }
+
+      .project-card-body h2 { font-size: 22px; }
+      .project-card-specs .price-block .spec-value { font-size: 19px; }
     }
   </style>
 
@@ -542,7 +599,7 @@
   <section class="hub-contact" id="contact">
     <div class="container">
       <div class="row g-5 align-items-center">
-        <div class="col-12 col-lg-6 contact-left">
+        <div class="col-12 col-lg-6 contact-left order-2 order-lg-1">
           <h2>Talk to Our Team</h2>
           <p class="lead">Have a question about a project, pricing, or availability? Send us your details and our team will get back to you within one working day.</p>
           <ul class="trust-list">
@@ -555,7 +612,7 @@
             <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=919834352875&amp;text=Hello,%20I%27d%20like%20more%20information%20about%20Vilas%20Javdekar%20projects."><i class="fa fa-whatsapp"></i> WhatsApp Us</a>
           </div>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
           <div class="contact-form-card">
             <h3>Send an Enquiry</h3>
             <p class="form-subtitle">Get instant call-back and complete project details.</p>
