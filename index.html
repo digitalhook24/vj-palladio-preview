@@ -199,31 +199,46 @@
       font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;
     }
     .project-badge.commercial { background: var(--hub-accent); }
-    .project-card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+    .project-card-body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
     .project-card-body h2 {
-      font-size: 18px; font-weight: 700; margin: 0 0 16px; color: var(--hub-text);
-      line-height: 1.3; letter-spacing: -0.2px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 26px; font-weight: 600; margin: 0 0 8px; color: var(--hub-text);
+      line-height: 1.15; letter-spacing: -0.4px;
     }
+    .project-card-body .location {
+      font-size: 13.5px; color: var(--hub-muted); margin: 0 0 18px; font-weight: 500;
+    }
+    .project-card-body .location i { color: var(--hub-accent); margin-right: 6px; }
     .project-card-specs {
-      display: grid; grid-template-columns: auto 1fr; gap: 8px 12px;
-      margin: 0 0 18px; padding: 14px 0; border-top: 1px solid #eef0ec; border-bottom: 1px solid #eef0ec;
+      margin: 0 0 22px; padding: 18px 0; border-top: 1px solid #eef0ec; border-bottom: 1px solid #eef0ec;
+      display: flex; justify-content: space-between; gap: 16px;
     }
-    .project-card-specs dt {
-      font-size: 10.5px; font-weight: 700; color: var(--hub-muted);
-      text-transform: uppercase; letter-spacing: 0.6px;
-      display: flex; align-items: center; gap: 6px;
+    .project-card-specs .spec-block { flex: 1; min-width: 0; }
+    .project-card-specs .spec-block.price-block { text-align: right; flex: 0 0 auto; }
+    .project-card-specs .spec-label {
+      font-size: 10px; font-weight: 700; color: var(--hub-muted);
+      text-transform: uppercase; letter-spacing: 1.2px; margin: 0 0 6px;
     }
-    .project-card-specs dt i { color: var(--hub-accent); font-size: 12px; width: 12px; text-align: center; }
-    .project-card-specs dd {
-      font-size: 13px; color: var(--hub-text); margin: 0; font-weight: 500; line-height: 1.4;
+    .project-card-specs .spec-value {
+      font-size: 15px; font-weight: 600; color: var(--hub-text);
+      line-height: 1.3; margin: 0; letter-spacing: -0.1px;
     }
-    .project-card-specs dd.price-row { font-weight: 700; color: var(--hub-accent); font-size: 15px; }
+    .project-card-specs .price-block .spec-value {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 26px; font-weight: 700; color: var(--hub-accent);
+      letter-spacing: -0.5px; line-height: 1;
+    }
+    .project-card-specs .price-block .spec-value small {
+      font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+      color: var(--hub-muted); display: block; letter-spacing: 0.5px;
+      text-transform: uppercase; margin-top: 4px;
+    }
     .project-card-cta {
       margin-top: auto;
       display: block; text-align: center;
       background: var(--hub-text); color: #fff;
-      padding: 10px 16px; border-radius: 4px;
-      font-size: 13px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+      padding: 13px 16px; border-radius: 4px;
+      font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
       transition: background 0.2s ease;
     }
     .project-card:hover .project-card-cta { background: var(--hub-accent); }
@@ -403,11 +418,17 @@
             </div>
             <div class="project-card-body">
               <h2>VJ Palladio Presidential Suite</h2>
-              <dl class="project-card-specs">
-                <dt><i class="fa fa-map-marker"></i> Location</dt><dd>Balewadi, Pune</dd>
-                <dt><i class="fa fa-th-large"></i> Config</dt><dd>3 &amp; 5.5 BHK · 3065 – 5800 sq.ft.</dd>
-                <dt><i class="fa fa-tag"></i> Starts At</dt><dd class="price-row">₹ 1.25 Cr*</dd>
-              </dl>
+              <p class="location"><i class="fa fa-map-marker"></i> Balewadi, Pune</p>
+              <div class="project-card-specs">
+                <div class="spec-block">
+                  <p class="spec-label">Configuration</p>
+                  <p class="spec-value">3 &amp; 5.5 BHK<br /><span style="color:var(--hub-muted); font-weight:500; font-size:13px;">3065 – 5800 sq.ft.</span></p>
+                </div>
+                <div class="spec-block price-block">
+                  <p class="spec-label">Starting From</p>
+                  <p class="spec-value">₹ 1.25 Cr*<small>onwards</small></p>
+                </div>
+              </div>
               <span class="project-card-cta">View Project</span>
             </div>
           </a>
@@ -422,11 +443,17 @@
             </div>
             <div class="project-card-body">
               <h2>VJ Palladio La Viento</h2>
-              <dl class="project-card-specs">
-                <dt><i class="fa fa-map-marker"></i> Location</dt><dd>Baner Mahalunge, Pune</dd>
-                <dt><i class="fa fa-th-large"></i> Config</dt><dd>3 BHK · 930 – 1108 sq.ft.</dd>
-                <dt><i class="fa fa-tag"></i> Starts At</dt><dd class="price-row">₹ 1.25 Cr*</dd>
-              </dl>
+              <p class="location"><i class="fa fa-map-marker"></i> Baner Mahalunge, Pune</p>
+              <div class="project-card-specs">
+                <div class="spec-block">
+                  <p class="spec-label">Configuration</p>
+                  <p class="spec-value">3 BHK<br /><span style="color:var(--hub-muted); font-weight:500; font-size:13px;">930 – 1108 sq.ft.</span></p>
+                </div>
+                <div class="spec-block price-block">
+                  <p class="spec-label">Starting From</p>
+                  <p class="spec-value">₹ 1.25 Cr*<small>onwards</small></p>
+                </div>
+              </div>
               <span class="project-card-cta">View Project</span>
             </div>
           </a>
@@ -441,11 +468,17 @@
             </div>
             <div class="project-card-body">
               <h2>VJ Palladio Kothrud Central</h2>
-              <dl class="project-card-specs">
-                <dt><i class="fa fa-map-marker"></i> Location</dt><dd>Kothrud, Pune</dd>
-                <dt><i class="fa fa-th-large"></i> Config</dt><dd>2, 3 &amp; 4 BHK · 775 – 1257 sq.ft.</dd>
-                <dt><i class="fa fa-tag"></i> Starts At</dt><dd class="price-row">₹ 1.67 Cr*</dd>
-              </dl>
+              <p class="location"><i class="fa fa-map-marker"></i> Kothrud, Pune</p>
+              <div class="project-card-specs">
+                <div class="spec-block">
+                  <p class="spec-label">Configuration</p>
+                  <p class="spec-value">2, 3 &amp; 4 BHK<br /><span style="color:var(--hub-muted); font-weight:500; font-size:13px;">775 – 1257 sq.ft.</span></p>
+                </div>
+                <div class="spec-block price-block">
+                  <p class="spec-label">Starting From</p>
+                  <p class="spec-value">₹ 1.67 Cr*<small>onwards</small></p>
+                </div>
+              </div>
               <span class="project-card-cta">View Project</span>
             </div>
           </a>
@@ -460,11 +493,17 @@
             </div>
             <div class="project-card-body">
               <h2>VJ Indiwork Kothrud Central</h2>
-              <dl class="project-card-specs">
-                <dt><i class="fa fa-map-marker"></i> Location</dt><dd>Kothrud, Pune</dd>
-                <dt><i class="fa fa-th-large"></i> Config</dt><dd>Smart Office · 265 – 355 sq.ft.</dd>
-                <dt><i class="fa fa-tag"></i> Starts At</dt><dd class="price-row">₹ 79.95 Lacs*</dd>
-              </dl>
+              <p class="location"><i class="fa fa-map-marker"></i> Kothrud, Pune</p>
+              <div class="project-card-specs">
+                <div class="spec-block">
+                  <p class="spec-label">Configuration</p>
+                  <p class="spec-value">Smart Office<br /><span style="color:var(--hub-muted); font-weight:500; font-size:13px;">265 – 355 sq.ft.</span></p>
+                </div>
+                <div class="spec-block price-block">
+                  <p class="spec-label">Starting From</p>
+                  <p class="spec-value">₹ 79.95 L*<small>onwards</small></p>
+                </div>
+              </div>
               <span class="project-card-cta">View Project</span>
             </div>
           </a>
@@ -479,11 +518,17 @@
             </div>
             <div class="project-card-body">
               <h2>VJ Premium Residences Hadapsar</h2>
-              <dl class="project-card-specs">
-                <dt><i class="fa fa-map-marker"></i> Location</dt><dd>Hadapsar, Pune</dd>
-                <dt><i class="fa fa-th-large"></i> Config</dt><dd>2, 3 &amp; 4.5 BHK · 800 – 1800 sq.ft.</dd>
-                <dt><i class="fa fa-tag"></i> Starts At</dt><dd class="price-row">₹ 1.20 Cr*</dd>
-              </dl>
+              <p class="location"><i class="fa fa-map-marker"></i> Hadapsar, Pune</p>
+              <div class="project-card-specs">
+                <div class="spec-block">
+                  <p class="spec-label">Configuration</p>
+                  <p class="spec-value">2, 3 &amp; 4.5 BHK<br /><span style="color:var(--hub-muted); font-weight:500; font-size:13px;">800 – 1800 sq.ft.</span></p>
+                </div>
+                <div class="spec-block price-block">
+                  <p class="spec-label">Starting From</p>
+                  <p class="spec-value">₹ 1.20 Cr*<small>onwards</small></p>
+                </div>
+              </div>
               <span class="project-card-cta">View Project</span>
             </div>
           </a>
