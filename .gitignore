@@ -1,0 +1,14 @@
+# Backend / server-side (contain credentials — do not push)
+send.php
+thank-you.php
+PHPMailer.php
+SMTP.php
+Exception.php
+Code.gs
+
+# Build/dev artifacts
+.claude/
+*.zip
+Thumbs.db
+.DS_Store
+desktop.ini

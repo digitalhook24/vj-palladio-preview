@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #00000e;
+        }
+        .thank-you-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #00000e;
+            color: #ffffff;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .thank-you-container h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .thank-you-container p.lead {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+        }
+        #redirectCountdown {
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PLGBW6B9');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLGBW6B9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="thank-you-container">
+    
+    <img src="assets/mailrec.svg" style="width:300px;">
+
+    <h1>Thank You for Getting in Touch!</h1>
+
+    <p class="lead">
+        <strong>We appreciate your contact.</strong><br>
+        One of our team members will get back to you soon.
+    </p>
+
+    <!-- Countdown Display -->
+    <p id="redirectCountdown">Redirecting in 10 seconds...</p>
+
+</div>
+
+
+<!-- ===========================
+     AUTO-REDIRECT SCRIPT
+============================ -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const flow = sessionStorage.getItem("flow");
+    const countdownBox = document.getElementById("redirectCountdown");
+
+    let seconds = 3;
+
+    countdownBox.textContent = `Redirecting in ${seconds} seconds...`;
+
+    const timer = setInterval(() => {
+
+        seconds--;
+        countdownBox.textContent = `Redirecting in ${seconds} seconds...`;
+
+        if (seconds <= 0) {
+            clearInterval(timer);
+
+            /* --------------------------
+               WHATSAPP REDIRECT
+            -------------------------- */
+            if (flow === "whatsapp") {
+                const number = sessionStorage.getItem("wa_number");
+                const rawMsg = sessionStorage.getItem("wa_message");
+
+                sessionStorage.removeItem("flow");
+                sessionStorage.removeItem("wa_number");
+                sessionStorage.removeItem("wa_message");
+
+                if (number && rawMsg) {
+                    const msg = encodeURIComponent(rawMsg);
+                    window.location.href =
+                        `https://api.whatsapp.com/send?phone=${number}&text=${msg}`;
+                }
+            }
+
+            /* --------------------------
+               CALL REDIRECT
+            -------------------------- */
+            else if (flow === "call") {
+                const callNum = sessionStorage.getItem("call_number");
+
+                sessionStorage.removeItem("flow");
+                sessionStorage.removeItem("call_number");
+
+                if (callNum) {
+                    window.location.href = "tel:" + callNum;
+                }
+            }
+        }
+
+    }, 1000);
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 407.3 385.7">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #13d2c2;
+        stroke-width: 4px;
+      }
+
+      .st0, .st1, .st2, .st3 {
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st1, .st2, .st4 {
+        fill: none;
+      }
+
+      .st0, .st5 {
+        mix-blend-mode: screen;
+      }
+
+      .st0, .st4 {
+        stroke-linecap: round;
+      }
+
+      .st6 {
+        fill: #06637f;
+      }
+
+      .st7 {
+        opacity: .5;
+      }
+
+      .st7, .st8 {
+        fill: #fff;
+      }
+
+      .st1 {
+        stroke-dasharray: 7.9 7.9;
+      }
+
+      .st1, .st2 {
+        stroke: #0284c4;
+      }
+
+      .st9 {
+        isolation: isolate;
+      }
+
+      .st10 {
+        opacity: 0;
+      }
+
+      .st10, .st11 {
+        fill: #020202;
+      }
+
+      .st11 {
+        opacity: .1;
+      }
+
+      .st12 {
+        fill: #0775a0;
+      }
+
+      .st13 {
+        fill: #d3ede8;
+      }
+
+      .st14, .st15 {
+        fill: #b5bbc1;
+      }
+
+      .st5, .st16, .st17 {
+        fill: #fdad13;
+      }
+
+      .st18 {
+        fill: #f7f7f7;
+      }
+
+      .st17, .st4 {
+        opacity: .3;
+      }
+
+      .st17, .st4, .st19 {
+        mix-blend-mode: multiply;
+      }
+
+      .st3 {
+        fill: #0284c4;
+        stroke: #fff;
+      }
+
+      .st15 {
+        font-family: Rubik-Bold, 'Rubik Bold';
+        font-size: 31.5px;
+        font-weight: 700;
+      }
+
+      .st4 {
+        stroke: #fdad13;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .st20, .st19 {
+        fill: #fe693c;
+      }
+
+      .st21 {
+        fill: #ceeded;
+      }
+
+      .st22 {
+        fill: #ededed;
+      }
+
+      .st23 {
+        fill: #f49600;
+      }
+
+      .st19 {
+        opacity: .3;
+      }
+    </style>
+  </defs>
+  <g class="st9">
+    <g id="DESIGNED_BY_FREEPIK">
+      <rect class="st8" x="43.6" y="168.9" width="76.7" height="19.2" rx="7.9" ry="7.9"/>
+      <rect class="st8" x="72.4" y="155.4" width="29.2" height="19.2" rx="7.9" ry="7.9"/>
+      <rect class="st13" x="288.4" y="218.8" width="76.7" height="19.2" rx="7.9" ry="7.9" transform="translate(653.5 456.8) rotate(180)"/>
+      <rect class="st13" x="307.1" y="205.3" width="29.2" height="19.2" rx="7.9" ry="7.9" transform="translate(643.4 429.8) rotate(180)"/>
+      <rect class="st8" x="64.5" y="322" width="275.4" height="15.9" rx="6.6" ry="6.6"/>
+      <path class="st23" d="M98.7,192.5h207.1v117c0,9.1-7.4,16.5-16.5,16.5H115.2c-9.1,0-16.5-7.4-16.5-16.5v-117h0Z"/>
+      <path class="st23" d="M305.8,192.5H98.7l92.8-98c5.8-6.1,15.6-6.1,21.4,0l92.8,98Z"/>
+      <rect class="st22" x="105.2" y="113.5" width="176.4" height="129.3" rx="6.8" ry="6.8"/>
+      <rect class="st8" x="74.7" y="100.9" width="81.2" height="26.7" rx="11" ry="11" transform="translate(230.6 228.5) rotate(180)"/>
+      <rect class="st8" x="100.7" y="82.1" width="40.7" height="26.7" rx="11" ry="11" transform="translate(242.2 191) rotate(180)"/>
+      <rect class="st10" x="126.2" y="117" width="176.4" height="129.3" rx="6.8" ry="6.8"/>
+      <rect class="st18" x="121.7" y="122" width="176.4" height="129.3" rx="6.8" ry="6.8"/>
+      <rect class="st10" x="114" y="139.7" width="176.4" height="129.3" rx="6.8" ry="6.8"/>
+      <rect class="st8" x="109.8" y="145.1" width="176.4" height="129.3" rx="6.8" ry="6.8"/>
+      <rect class="st14" x="133.3" y="200.3" width="129.5" height="3.6" rx="1.5" ry="1.5"/>
+      <rect class="st14" x="133.3" y="212.4" width="129.5" height="3.6" rx="1.5" ry="1.5"/>
+      <rect class="st14" x="133.3" y="224.5" width="129.5" height="3.6" rx="1.5" ry="1.5"/>
+      <rect class="st14" x="133.3" y="236.6" width="129.5" height="3.6" rx="1.5" ry="1.5"/>
+      <rect class="st14" x="133.3" y="248.7" width="129.5" height="3.6" rx="1.5" ry="1.5"/>
+      <path class="st16" d="M305.8,192.5v113.6c0,11-8.9,19.9-19.9,19.9H118.6c-11,0-19.9-8.9-19.9-19.9v-113.6l103.5,67,103.5-67Z"/>
+      <path class="st17" d="M277.6,210.8v67.2c0,11-8.9,19.9-19.9,19.9H98.7v8.3c0,11,8.9,19.9,19.9,19.9h167.2c11,0,19.9-8.9,19.9-19.9v-113.6l-28.2,18.2Z"/>
+      <rect class="st5" x="111" y="260.9" width="12.7" height="25" rx="5.2" ry="5.2"/>
+      <rect class="st5" x="111" y="242" width="12.7" height="14.4" rx="5.2" ry="5.2"/>
+      <text class="st15" transform="translate(131.7 186)"><tspan x="0" y="0">@</tspan></text>
+      <rect class="st14" x="166.7" y="174.5" width="63.2" height="3.6" rx="1.5" ry="1.5"/>
+      <rect class="st14" x="166.7" y="186.6" width="95" height="3.6" rx="1.5" ry="1.5"/>
+      <circle class="st11" cx="308.4" cy="269.2" r="32.2" transform="translate(-100 296.9) rotate(-45)"/>
+      <circle class="st20" cx="304.2" cy="264" r="32.2" transform="translate(-97.6 292.4) rotate(-45)"/>
+      <path class="st19" d="M336.4,264c0,17.8-14.4,32.2-32.2,32.2s-20.8-5.5-26.6-14c5.2,3.6,11.4,5.6,18.2,5.6,17.8,0,32.2-14.4,32.2-32.2s-2.1-13-5.6-18.2c8.5,5.8,14,15.5,14,26.6Z"/>
+      <path class="st8" d="M316.4,253.2c-1.5-1.5-3.6-2.5-6-2.5s-3.5.6-4.9,1.6c-.4.3-.7.6-1.1.9-.1.1-.2.3-.4.4-.1-.1-.2-.3-.4-.4-.3-.3-.7-.6-1.1-.9-1.4-1-3.1-1.6-4.9-1.6s-4.4.9-6,2.5c-1.5,1.5-2.5,3.6-2.5,6s.6,3.5,1.6,4.9l1.9,1.9,11.2,11.2,11.2-11.2,1.9-1.9c1-1.4,1.6-3.1,1.6-4.9s-.9-4.4-2.5-6Z"/>
+      <path class="st20" d="M279.2,265.8h0c-1.7,0-3-1.4-3-3.1.1-8.7,5.6-25.3,25.6-25.5h0c1.6,0,3,1.3,3,3,0,1.7-1.3,3-3,3.1-19.1.3-19.7,18.8-19.7,19.6,0,1.6-1.4,3-3,3Z"/>
+      <rect class="st21" x="3.9" y="254.9" width="73" height="24" rx="9.9" ry="9.9" transform="translate(80.7 533.8) rotate(180)"/>
+      <path class="st21" d="M28,238h16.7c5.5,0,9.9,4.5,9.9,9.9v4.1c0,5.5-4.5,9.9-9.9,9.9h-16.7c-5.5,0-9.9-4.5-9.9-9.9v-4.1c0-5.5,4.5-9.9,9.9-9.9Z" transform="translate(72.7 500) rotate(180)"/>
+      <path class="st8" d="M9.9,251.4h53.2c5.5,0,9.9,4.5,9.9,9.9v4.1c0,5.5-4.5,9.9-9.9,9.9H9.9c-5.5,0-9.9-4.5-9.9-9.9v-4.1c0-5.5,4.5-9.9,9.9-9.9Z" transform="translate(73 526.9) rotate(180)"/>
+      <rect class="st8" x="14.2" y="234.6" width="36.6" height="24" rx="9.9" ry="9.9" transform="translate(65 493.2) rotate(180)"/>
+      <g>
+        <path class="st2" d="M103.2,153.1c-1.1.7-2.2,1.5-3.3,2.2"/>
+        <path class="st1" d="M93.4,159.9c-7.6,5.6-14.7,11.7-19.8,19.6-7.2,11.2-9.3,26.8-1.4,37.5,6.8,9.2,18.8,12.6,30.2,13.9,26.3,3,53-2.1,77.6-11.8,24.6-9.6,47.3-23.7,69-38.8,10-7,19.9-14.2,28.3-23.1,9.4-10,13.6-22.7,19.2-35.1,1.9-4.2,3.5-9.6.3-12.8-1.8-1.7-4.5-2.1-7-1.8-4.9.7-9.3,4.2-11.1,8.8-1.8,4.6-1,10.1,2,14,4.2,5.4,11.9,7,18.5,5.6,6.7-1.4,12.5-5.3,17.8-9.5,11.3-8.9,21.3-19.4,29.7-31.1"/>
+        <path class="st2" d="M348.9,92c.7-1.1,1.5-2.2,2.2-3.3"/>
+      </g>
+      <polygon class="st6" points="316.5 130.3 339.2 109 326.4 105.5 316.5 130.3"/>
+      <polygon class="st12" points="316.6 99.1 316.5 130.3 327.1 106 390.2 56.3 316.1 97.3 316.6 99.1"/>
+      <path class="st3" d="M298.1,90.3l18.7,8.6,73.4-42.6-92,31.8c-1,.4-1.1,1.8-.1,2.2Z"/>
+      <path class="st3" d="M390.2,56.3l-63.1,49.8,24.2,11.7c.8.4,1.7.1,2.2-.7l36.7-60.8Z"/>
+      <path class="st7" d="M63.1,166.6c0,3.1-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6,2.5-5.6,5.6-5.6,5.6,2.5,5.6,5.6Z"/>
+      <path class="st7" d="M174.4,90.8c0,3.1-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6,2.5-5.6,5.6-5.6,5.6,2.5,5.6,5.6Z"/>
+      <path class="st7" d="M85.8,293c0,3.1-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6,2.5-5.6,5.6-5.6,5.6,2.5,5.6,5.6Z"/>
+      <circle class="st7" cx="38" cy="185.5" r="10.9"/>
+      <circle class="st7" cx="354.6" cy="241.9" r="8.8" transform="translate(-67.2 321.6) rotate(-45)"/>
+      <path class="st7" d="M360.9,264.1c0,3.4-2.7,6.1-6.1,6.1s-6.1-2.7-6.1-6.1,2.7-6.1,6.1-6.1,6.1,2.7,6.1,6.1Z"/>
+      <polyline class="st4" points="102.7 205.2 202 271.4 296.9 211.6"/>
+      <rect class="st21" x="319.7" y="188.6" width="87.6" height="28.8" rx="11.9" ry="11.9"/>
+      <rect class="st21" x="335.3" y="168.4" width="43.9" height="28.8" rx="11.9" ry="11.9"/>
+      <rect class="st8" x="313.2" y="183.5" width="87.6" height="28.8" rx="11.9" ry="11.9"/>
+      <rect class="st8" x="328.8" y="163.3" width="43.9" height="28.8" rx="11.9" ry="11.9"/>
+      <path class="st0" d="M335.3,182.8s-4.7-12.9,9.2-15"/>
+      <path class="st0" d="M107.5,102.4s-4.7-12.9,9.2-15"/>
+      <path class="st0" d="M22.1,253.5s-4.7-12.9,9.2-15"/>
+    </g>
+  </g>
+</svg>
