@@ -234,15 +234,69 @@
       color: var(--hub-muted); display: block; letter-spacing: 0.8px;
       text-transform: uppercase; margin-top: 5px;
     }
-    .project-card-cta {
+    .project-card-actions {
       margin-top: auto;
-      display: block; text-align: center;
-      background: var(--hub-text); color: #fff;
-      padding: 13px 16px; border-radius: 4px;
-      font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-      transition: background 0.2s ease;
+      display: flex; gap: 10px;
     }
-    .project-card:hover .project-card-cta { background: var(--hub-accent); }
+    .project-card-actions .card-btn {
+      flex: 1; text-align: center;
+      padding: 11px 14px; border-radius: 4px;
+      font-size: 12.5px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
+      text-decoration: none; cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+      border: 1px solid transparent;
+      font-family: 'Inter', sans-serif;
+    }
+    .card-btn-interested {
+      background: var(--hub-accent); color: #fff; border-color: var(--hub-accent);
+    }
+    .card-btn-interested:hover { background: var(--hub-accent-dark); border-color: var(--hub-accent-dark); color: #fff; }
+    .card-btn-view {
+      background: var(--hub-text); color: #fff; border-color: var(--hub-text);
+    }
+    .card-btn-view:hover { background: #000; color: #fff; }
+
+    /* Interested modal */
+    .hub-interested-modal .modal-content {
+      border: none; border-radius: 8px; padding: 28px 28px 26px;
+      background: #fff; position: relative;
+    }
+    .hub-interested-modal .btn-close-x {
+      position: absolute; top: 8px; right: 14px;
+      background: transparent; border: none;
+      font-size: 28px; color: var(--hub-muted); cursor: pointer; line-height: 1;
+      padding: 0;
+    }
+    .hub-interested-modal .btn-close-x:hover { color: var(--hub-text); }
+    .hub-interested-modal .modal-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 26px; font-weight: 600; margin: 0 0 6px; color: var(--hub-text);
+      line-height: 1.2; padding-right: 30px;
+    }
+    .hub-interested-modal .modal-title .js-modal-project { color: var(--hub-accent); }
+    .hub-interested-modal .modal-sub {
+      font-size: 13px; color: var(--hub-muted); margin: 0 0 20px;
+    }
+    .hub-interested-modal .form-control {
+      width: 100%; padding: 11px 14px; font-size: 14px;
+      border: 1px solid #ddd; border-radius: 4px; margin-bottom: 12px;
+    }
+    .hub-interested-modal .form-control:focus {
+      outline: none; border-color: var(--hub-accent);
+      box-shadow: 0 0 0 3px rgba(181,136,46,0.15);
+    }
+    .hub-interested-modal .btn-submit {
+      width: 100%; padding: 13px; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.5px; text-transform: uppercase;
+      background: var(--hub-accent); color: #fff; border: none; border-radius: 4px;
+      cursor: pointer; transition: background 0.2s ease; margin-top: 6px;
+    }
+    .hub-interested-modal .btn-submit:hover { background: var(--hub-accent-dark); }
+    .hub-interested-modal .checkbox-section {
+      display: flex; align-items: flex-start; gap: 8px;
+      font-size: 11px; color: var(--hub-muted); margin-top: 12px;
+    }
+    .hub-interested-modal .checkbox-section p { margin: 0; line-height: 1.5; }
 
     /* Contact section */
     .hub-contact {
@@ -495,7 +549,7 @@
 
         <!-- 1. VJ Palladio Presidential Suite Balewadi -->
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="vj-palladio-balewadi-central.html" class="project-card">
+          <div class="project-card">
             <div class="project-card-img">
               <img src="assets/banner-web-1.webp" alt="VJ Palladio Presidential Suite" loading="lazy" />
               <span class="project-badge">Residential</span>
@@ -513,14 +567,17 @@
                   <p class="spec-value">₹ 1.25 Cr*<small>onwards</small></p>
                 </div>
               </div>
-              <span class="project-card-cta">View Project</span>
+              <div class="project-card-actions">
+                <button type="button" class="card-btn card-btn-interested" data-bs-toggle="modal" data-bs-target="#interestedModal" data-project="VJ Palladio Presidential Suite">Interested</button>
+                <a href="vj-palladio-balewadi-central.html" class="card-btn card-btn-view">View More</a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
         <!-- 2. VJ Palladio La Viento -->
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="vj-palladio-la-viento.html" class="project-card">
+          <div class="project-card">
             <div class="project-card-img">
               <img src="images/la-viento/overview.webp" alt="VJ Palladio La Viento" loading="lazy" />
               <span class="project-badge">Residential</span>
@@ -538,14 +595,17 @@
                   <p class="spec-value">₹ 1.25 Cr*<small>onwards</small></p>
                 </div>
               </div>
-              <span class="project-card-cta">View Project</span>
+              <div class="project-card-actions">
+                <button type="button" class="card-btn card-btn-interested" data-bs-toggle="modal" data-bs-target="#interestedModal" data-project="VJ Palladio La Viento">Interested</button>
+                <a href="vj-palladio-la-viento.html" class="card-btn card-btn-view">View More</a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
         <!-- 3. VJ Palladio Kothrud Central -->
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="vj-palladio-kothrud-central.html" class="project-card">
+          <div class="project-card">
             <div class="project-card-img">
               <img src="images/kothrud-central/banner/banner1.webp" alt="VJ Palladio Kothrud Central" loading="lazy" />
               <span class="project-badge">Residential</span>
@@ -563,14 +623,17 @@
                   <p class="spec-value">₹ 2.27 Cr*<small>onwards</small></p>
                 </div>
               </div>
-              <span class="project-card-cta">View Project</span>
+              <div class="project-card-actions">
+                <button type="button" class="card-btn card-btn-interested" data-bs-toggle="modal" data-bs-target="#interestedModal" data-project="VJ Palladio Kothrud Central">Interested</button>
+                <a href="vj-palladio-kothrud-central.html" class="card-btn card-btn-view">View More</a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
         <!-- 4. VJ Indiwork Kothrud Central -->
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="vj-indiwork-kothrud-central.html" class="project-card">
+          <div class="project-card">
             <div class="project-card-img">
               <img src="images/indiwork-kothrud/banner/banner1.webp" alt="VJ Indiwork Kothrud Central" loading="lazy" />
               <span class="project-badge commercial">Commercial</span>
@@ -588,14 +651,17 @@
                   <p class="spec-value">₹ 79.95 L*<small>onwards</small></p>
                 </div>
               </div>
-              <span class="project-card-cta">View Project</span>
+              <div class="project-card-actions">
+                <button type="button" class="card-btn card-btn-interested" data-bs-toggle="modal" data-bs-target="#interestedModal" data-project="VJ Indiwork Kothrud Central">Interested</button>
+                <a href="vj-indiwork-kothrud-central.html" class="card-btn card-btn-view">View More</a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
         <!-- 5. VJ Premium Residences Hadapsar -->
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="vj-new-launch-hadapsar.html" class="project-card">
+          <div class="project-card">
             <div class="project-card-img">
               <img src="images/la-viento/banner/hadapsar-banner.webp" alt="VJ Premium Residences Hadapsar" loading="lazy" />
               <span class="project-badge">Residential</span>
@@ -613,9 +679,12 @@
                   <p class="spec-value">₹ 1.20 Cr*<small>onwards</small></p>
                 </div>
               </div>
-              <span class="project-card-cta">View Project</span>
+              <div class="project-card-actions">
+                <button type="button" class="card-btn card-btn-interested" data-bs-toggle="modal" data-bs-target="#interestedModal" data-project="VJ Premium Residences Hadapsar">Interested</button>
+                <a href="vj-new-launch-hadapsar.html" class="card-btn card-btn-view">View More</a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
       </div>
@@ -682,11 +751,35 @@
     <p style="font-size: 11px; color: #999;">Prices, configurations, and availability indicated are as on the date of publication and subject to change. Please refer to individual project pages and the official RERA registration for the latest details.</p>
   </footer>
 
-  <script src="js/laviento/bootstrap.bundle.min.js"></script>
+  <!-- Interested Modal (shared, triggered from any project card) -->
+  <div class="modal fade hub-interested-modal" id="interestedModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close-x" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+        <h3 class="modal-title">I'm Interested in <span class="js-modal-project">this project</span></h3>
+        <p class="modal-sub">Share your details and our team will get back to you within one working day.</p>
+        <form action="send.php" method="post" class="form_inner">
+          <input type="hidden" name="project" class="js-modal-project-input" value="">
+          <input type="hidden" name="source" value="hub_card_interested">
+          <input type="hidden" name="page_url" class="js-page-url">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          <input type="tel" name="phone" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10,13}" required>
+          <input type="email" name="email" class="form-control" placeholder="Email Address">
+          <button type="submit" class="btn-submit">Send Enquiry</button>
+          <div class="checkbox-section">
+            <input type="checkbox" checked>
+            <p>I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/laviento/bootstrap.min.js"></script>
   <script>
     (function () {
-      var el = document.querySelector('.js-page-url');
-      if (el) el.value = window.location.href;
+      // Fill all page_url hidden inputs (bottom form + modal)
+      document.querySelectorAll('.js-page-url').forEach(function (el) { el.value = window.location.href; });
 
       // Soft toast if visitor arrived back here from send.php with ?error=missing_fields
       var params = new URLSearchParams(window.location.search);
@@ -700,6 +793,21 @@
         if (contact) contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
         setTimeout(function () { toast.style.transition = 'opacity 0.4s ease'; toast.style.opacity = '0'; }, 5000);
         setTimeout(function () { if (toast.parentNode) toast.parentNode.removeChild(toast); }, 5600);
+      }
+
+      // Interested modal — populate with the clicked card's project name
+      var modal = document.getElementById('interestedModal');
+      if (modal) {
+        modal.addEventListener('show.bs.modal', function (event) {
+          var btn = event.relatedTarget;
+          var project = (btn && btn.getAttribute('data-project')) || 'this project';
+          var nameSpan = modal.querySelector('.js-modal-project');
+          var hiddenInput = modal.querySelector('.js-modal-project-input');
+          var pageUrl = modal.querySelector('.js-page-url');
+          if (nameSpan) nameSpan.textContent = project;
+          if (hiddenInput) hiddenInput.value = project;
+          if (pageUrl) pageUrl.value = window.location.href;
+        });
       }
     })();
   </script>
