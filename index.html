@@ -344,21 +344,47 @@
       .hub-navbar .navbar-brand img { height: 38px; }
       .hub-navbar .navbar-nav { gap: 6px; padding-top: 6px; }
 
-      .hub-hero { margin-top: 62px !important; min-height: clamp(480px, 70vh, 600px); }
-      .hub-hero .carousel-item { min-height: clamp(480px, 70vh, 600px); }
-      .hub-hero-overlay { padding: 40px 22px 96px; }
-      .hub-hero-overlay .eyebrow { margin: 0 0 16px; letter-spacing: 2.5px; }
-      .hub-hero-overlay h1 { font-size: 36px; margin: 0 0 18px; }
-      .hub-hero-overlay .sub { font-size: 14px; margin: 0 0 28px; }
+      /* Mobile hero: image on top, text in a dark block below (not overlaid) */
+      .hub-hero {
+        margin-top: 62px !important;
+        min-height: 0; height: auto;
+        display: flex; flex-direction: column;
+      }
+      .hub-hero::before { display: none; } /* drop the overlay gradient — text isn't over image anymore */
+      .hub-hero #hubHeroCarousel,
+      .hub-hero .carousel-inner,
+      .hub-hero .carousel-item { height: 44vh; min-height: 280px; max-height: 380px; }
+      .hub-hero .carousel-item img { animation: none; } /* skip the zoom on mobile for snappier render */
+      .hub-hero .carousel-indicators {
+        position: absolute; left: 0; right: 0; bottom: 12px;
+        justify-content: center; z-index: 2;
+      }
+      .hub-hero .carousel-indicators button { width: 26px; height: 2px; }
+      .hub-hero .carousel-indicators button.active { width: 40px; }
+      .hub-hero .hero-meta { display: none; }
+
+      .hub-hero-overlay {
+        position: static; inset: auto; pointer-events: auto;
+        background: #15191b;
+        padding: 30px 22px 32px;
+        max-width: 100%;
+        color: #fff;
+      }
+      .hub-hero-overlay .eyebrow { margin: 0 0 14px; letter-spacing: 2.5px; }
+      .hub-hero-overlay h1 {
+        font-size: 32px; margin: 0 0 14px; line-height: 1.1;
+        text-shadow: none; color: #fff;
+      }
+      .hub-hero-overlay .sub {
+        font-size: 14px; margin: 0 0 22px;
+        color: rgba(255,255,255,0.78); max-width: 100%;
+      }
       .hub-hero-overlay .hero-ctas { gap: 10px; width: 100%; }
       .hub-hero-overlay .hero-cta {
         flex: 1 1 100%; justify-content: center;
-        padding: 12px 18px; letter-spacing: 1.4px;
+        padding: 13px 18px; letter-spacing: 1.4px;
       }
-      .hub-hero .hero-meta { display: none; }
-      .hub-hero .carousel-indicators { left: 22px; right: 22px; bottom: 22px; justify-content: center; }
-      .hub-hero .carousel-indicators button { width: 30px; }
-      .hub-hero .carousel-indicators button.active { width: 46px; }
+      .hub-hero-overlay .hero-cta.ghost { border-color: rgba(255,255,255,0.45); }
 
       .hub-about { padding: 28px 18px; }
       .hub-about h2 { font-size: 26px; }
